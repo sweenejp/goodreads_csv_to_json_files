@@ -1,6 +1,6 @@
 import csv
 import json
-from isbnlib import meta, desc, cover, classify, goom, isbn_from_words
+from isbnlib import meta, desc, goom, isbn_from_words
 import datetime
 
 # service for looking up book data
@@ -13,7 +13,7 @@ fmt = '%Y%m%d%H%M'
 #how you want your text field to appear
 TW_text_field = "{{!!long_title}} by {{!!book_author}}\n\n{{!!book_desc}}\n\n{{!!book_image}}"
 
-csv_file_path = "/home/pi/Documents/Thonny/Goodreads converting to json/goodreads_library_export (3).csv"
+csv_file_path = input("Enter your csv file path here: ")
 
 #open csv file
 with open(csv_file_path, "r") as file:
@@ -57,3 +57,4 @@ with open(csv_file_path, "r") as file:
         jsonfile = open(f"{json_file_name}.json", "w")
         jsonfile.write(json_string)
         jsonfile.close()
+
