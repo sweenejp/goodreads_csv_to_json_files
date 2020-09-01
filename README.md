@@ -6,4 +6,6 @@ First you need to change a few things in the csv file. Make sure that all the ke
 
 You can update what your "text" field will look like by editing the script. Change the variable TW_text_field to however you wish your tiddler to appear.
 
+After you run the script, simply drag and drop the json files into your TiddlyWiki :)
+
 Email any questions to sweenejp@gmail.com
